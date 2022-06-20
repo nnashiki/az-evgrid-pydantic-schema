@@ -3,8 +3,10 @@
 #   timestamp: 2022-06-20T07:55:08+00:00
 
 from __future__ import annotations
-from az_evgrid_pydantic_schema.base import Base
+
 from pydantic import BaseModel
+
+from az_evgrid_pydantic_schema.base import Base
 
 
 class StorageDiagnostics(BaseModel):

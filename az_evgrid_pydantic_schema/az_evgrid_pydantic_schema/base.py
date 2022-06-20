@@ -3,7 +3,9 @@
 #   timestamp: 2022-06-20T08:04:24+00:00
 
 from __future__ import annotations
+
 import datetime
+
 from pydantic import BaseModel
 
 

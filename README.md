@@ -1,5 +1,14 @@
 # az-evgrid-pydantic-schema
-Azure Event Grid の event schema  を Pydantic Model で提供
+Azure Event Grid の event schema を Pydantic Model で提供
+
+## 使い方
+
+Azure Event Grid の event データ(json形式) を Pydantic Model Object にパースできます。  
+現段階では以下のイベントに対応しています。
+
+- 実装済みのイベント
+    - Microsoft.Storage.BlobCreated イベント
+         - https://docs.microsoft.com/ja-jp/azure/event-grid/event-schema-blob-storage?tabs=event-grid-event-schema#microsoftstorageblobcreated-event
 
 
 ## 開発方法
