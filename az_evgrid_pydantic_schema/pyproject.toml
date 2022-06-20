@@ -9,6 +9,8 @@ repository = "https://github.com/nnashiki/az-evgrid-pydantic-schema"
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pydantic = "^1.9.1"
+datamodel-code-generator = "^0.13.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
