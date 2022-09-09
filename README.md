@@ -9,7 +9,9 @@ Azure Event Grid の event データ(json形式) を Pydantic Model Object に�
 - 実装済みのイベント
     - Microsoft.Storage.BlobCreated イベント
          - https://docs.microsoft.com/ja-jp/azure/event-grid/event-schema-blob-storage?tabs=event-grid-event-schema#microsoftstorageblobcreated-event
+         - https://docs.microsoft.com/ja-jp/azure/event-grid/event-schema?WT.mc_id=Portal-Microsoft_Azure_EventGrid
 
+test ファイルの中身を見ると使い方がわかります。
 
 ## 開発方法
 

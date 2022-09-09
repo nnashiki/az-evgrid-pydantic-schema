@@ -9,7 +9,7 @@ import datetime
 from pydantic import BaseModel
 
 
-class Base(BaseModel):
+class EventGridBase(BaseModel):
     topic: str
     subject: str
     eventType: str

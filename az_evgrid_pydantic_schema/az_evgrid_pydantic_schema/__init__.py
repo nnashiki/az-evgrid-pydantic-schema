@@ -1,3 +1,3 @@
-from .storage_blob import StorageBlobCreatedBase, StorageBlobCreatedFull
+from .storage_blob import StorageBlobCreatedData, StorageBlobCreatedEvent
 
 __version__ = "0.1.0"
