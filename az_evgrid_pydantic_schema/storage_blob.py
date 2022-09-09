@@ -4,8 +4,10 @@
 
 from __future__ import annotations
 
-from pydantic import BaseModel, ValidationError, validator
 from urllib.parse import urlparse
+
+from pydantic import BaseModel, ValidationError, validator
+
 from az_evgrid_pydantic_schema.base import EventGridBase
 
 
@@ -25,14 +27,14 @@ class StorageBlobCreatedData(BaseModel):
     sequencer: str
     storageDiagnostics: StorageDiagnostics
 
-    @validator('url')
+    @validator("url")
     def url_must_url_safe(cls, v):
         try:
             result = urlparse(v)
             if all([result.scheme, result.netloc]):
                 return v
         except:
-            raise ValueError('its not url safe')
+            raise ValueError("its not url safe")
 
 
 class StorageBlobCreatedEvent(EventGridBase):
@@ -50,4 +52,3 @@ class StorageBlobCreatedEvent(EventGridBase):
     def account_url(self):
         result = urlparse(self.data.url)
         return f"{result.scheme}://{result.netloc}/"
-

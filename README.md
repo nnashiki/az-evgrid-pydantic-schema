@@ -18,7 +18,6 @@ test ファイルの中身を見ると使い方がわかります。
 以下手順を実行して、ローカルソースを利用したテストができます。
 
 ```shell
-$ cd az_evgrid_pydantic_schema
 $ poetry shell
 $ poetry run task test
 ```

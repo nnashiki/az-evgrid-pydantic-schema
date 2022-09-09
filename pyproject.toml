@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "az_evgrid_pydantic_schema"
-version = "0.1.0"
+version = "0.2.0"
 description = "Azure Event Grid の event schema  を Pydantic Model で提供"
 authors = ["Niten Nashiki <n.nashiki.work@gmail.com>"]
 readme = "README.md"
