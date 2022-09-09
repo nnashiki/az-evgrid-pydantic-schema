@@ -24,7 +24,5 @@ $ poetry run task test
 
 ## publish
 
-- `poetry build`
-- `poetry publish` 
-    - `poetry publish` すると user と password の確認が求められます。
+- `poetry publish --build -u <username> -p <password>`
 - https://cocoatomo.github.io/poetry-ja/repositories/
